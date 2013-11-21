@@ -1,31 +1,17 @@
+//
+//  ___FILENAME___
+//  ___PROJECTNAME___
+//
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//
+
 #import "___FILEBASENAME___.h"
 
-
-#pragma mark Constants
-
-
-#pragma mark - Class Extension
-
 @interface ___FILEBASENAMEASIDENTIFIER___ ()
-
-- (void)_initialize___VARIABLE_className:identifier___;
-
-
 @end
 
-
-#pragma mark - Class Variables
-
-
-#pragma mark - Class Definition
-
 @implementation ___FILEBASENAMEASIDENTIFIER___
-
-
-#pragma mark - Properties
-
-
-#pragma mark - Constructors
 
 - (id)initWithFrame: (CGRect)frame
 {
@@ -71,5 +57,11 @@
 	// Initialize instance variables.
 }
 
+#pragma mark - Factory Methods
++ (instancetype)standard___FILEBASENAMEASIDENTIFIER___
+{
+    ___FILEBASENAMEASIDENTIFIER___ *view = (___FILEBASENAMEASIDENTIFIER___ *)[[[NSBundle mainBundle] loadNibNamed:@"___FILEBASENAMEASIDENTIFIER___" owner:nil options:nil] objectAtIndex:0];
+    return view;
+}
 
 @end
